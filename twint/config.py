@@ -49,7 +49,7 @@ class Config:
     Index_tweets: str = "twinttweets"
     Index_follow: str = "twintgraph"
     Index_users: str = "twintuser"
-    Retries_count: int = 10
+    Retries_count: int = 0 #maoo set to 0 because of airflow handeling retries (was 10)
     Resume: object = None
     Images: bool = False
     Videos: bool = False
